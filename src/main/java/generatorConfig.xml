@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+
+	<classPathEntry location="C:\Users\tomchen\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+    				connectionURL="jdbc:mysql://127.0.0.1:3306/mybbs?useUnicode=true&amp;characterEncoding=utf-8" 
+    				userId="root" password="password" />
+    <javaModelGenerator targetPackage="org.cc.mybatis.model" targetProject="mybatis" />
+    <sqlMapGenerator targetPackage="org.cc.mybatis.mapper" targetProject="mybatis" />
+    <javaClientGenerator targetPackage="org.cc.mybatis.dao" targetProject="mybatis" type="XMLMAPPER" />
+    <table tableName="tbl_filter" domainObjectName="Filter" ></table>
+    <table tableName="tbl_source_page" domainObjectName="SourcePage"></table>
+    <table tableName="tbl_source_page_category" domainObjectName="SourcePageCategory"></table>
+    <table tableName="tbl_source_page_filter" domainObjectName="SourcePageFilter"></table>
+    <table tableName="tbl_source_page_filter_detail" domainObjectName="SourcePageFilterDetail"></table>
+    <table tableName="tbl_source_page_sample" domainObjectName="SourcePageSample"></table>
+    
+    
+  </context>
+</generatorConfiguration>
